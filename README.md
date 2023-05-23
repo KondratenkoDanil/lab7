@@ -1,1 +1,1 @@
-# lab7
+# laboratorna-robotra7

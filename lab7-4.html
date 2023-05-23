@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-holder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+            height: 350px;
+            width: 300px;
+            border-radius: 7px;
+            border: 3px solid black;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-family: 'Lucida Sans Unicode';
+        }
+
+        .form .form-input {
+            margin-bottom: 5px;
+            width: 90%;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 14px;
+            font-family: 'Lucida Sans Unicode';
+			color: black;
+        }
+
+        .horizontal-input-group {
+            display: flex;
+            margin-bottom: 5px;
+        }
+
+        .vertical-input-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5px;
+        }
+
+        .form-input-radio {
+            font-size: 14px;
+            font-family: 'Lucida Sans Unicode';
+        }
+        .submit-button {
+            width: 90%;
+            height: 40px;
+            background-color: whitesmoke;
+            font-family: 'Lucida Sans Unicode';
+            font-size: 20px;
+			color:black;
+			border-radius: 5px;
+			border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-holder">
+        <form action="formSuccess.html" class="form">
+            <div class="form-header">
+                <h2>Форма замовлення</h2>
+            </div>
+            <input type="text" class="form-input" name="bank-number" placeholder="Номер банківського рахунку">
+            <input type="text" class="form-input" name="personal-name" placeholder="Особистий номер користувача">
+            <div class="vertical-input-group">
+                <span>Список: </span>
+                <div><input type="checkbox" name="order-food"> Їжа</div>
+                <div><input type="checkbox" name="order-water"> Вода</div>
+                
+            </div>
+            <select class="form-input" name="purchase-type">
+                <option value="CARD">Картою</option>
+                <option value="CASH">Готівкою</option>
+            </select>
+            
+            <textarea name="comment" class="form-input" placeholder="Ваш коментар"></textarea>
+            <button type="submit" class="submit-button">Зберегти</button>
+        </form>
+    </div>
+</body>
+</html>
